@@ -1,0 +1,22 @@
+body {
+    background-color: gray;
+    color: bisque;
+    font-family: 'Inconsolata';
+    font-weight:700;
+    }
+#gwint_cały_div
+{
+    background-color: green;
+    width: 100%;
+    height: 100%;
+}
+#zegar
+{
+    text-align: center;
+    font-size: 30px;
+}
+#podstrony_div
+{
+    text-align: center;
+
+}
