@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl" >
+<head>
+    <meta charset="UTF-8">
+    <title>Mercedes Benz</title>
+    <link rel="stylesheet" href="../styledopodstron/mercedes_light.css">
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js_m/mercedes_light.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+    <script type="text/javascript" src="js_m/zmienslajda.js"></script>
+    <script type="text/javascript" src="../../js/timer.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="jquery-3.5.1.min.js"></script>
+
+</head>
+<body onload="zmienslajd();odliczanie()" style="background-color:black ">
+<div id="container">
+    <nav class="navbar fixed-top navbar navbar-dark bg-dark ">
+
+        <div id="main">
+            <span onmouseover="pokaz();"  onmouseout="zniknij()" width="24" height="24" class="navbar-toggler-icon bg-dark"></span>
+        </div>
+
+
+        <a class="navbar-brand" href="https://linkd.pl/d7f7"   target="_blank"><img style="width:70px;height: 70px" src="https://seeklogo.net/wp-content/uploads/2020/09/mercedes-benz-star-logo-512x512.png"  alt="Mercedes-Benz Star logo vector"  /></a>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill-rule="evenodd" d="M14.53 15.59a8.25 8.25 0 111.06-1.06l5.69 5.69a.75.75 0 11-1.06 1.06l-5.69-5.69zM2.5 9.25a6.75 6.75 0 1111.74 4.547.746.746 0 00-.443.442A6.75 6.75 0 012.5 9.25z"></path></svg>
+        </button>
+
+
+
+
+
+</nav>
+
+<div class="modal" id="myModal" >
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <form name="formularz">
+                    Podaj login<input type="text" id="login"><br>
+                    Podaj hasło<input type="password" name="haslo"><br>
+                    <input type="button" value="Zaloguj" onclick="logowanie()">
+                </form>
+                <script>
+                    function logowanie() {
+                        var login = document.getElementById("login").value;
+                        var haslo = document.formularz.haslo.value;
+                        if(login=="admin" && haslo=="123")
+                        {
+                            window.location.href="index1.html";
+                        }
+                        else
+                        {
+                            alert("błędny login i hasło");
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+  <p></p>
+</div>
+
+
+<div id="slider"></div>
+
+<footer id="footer" class="navbar navbar-dark bg-dark stick-bottom">
+    <div class="float-right " id="zegar" style="color:dodgerblue;font-size:20px"></div>
+    <blockquote class="blockquote text-left">
+        <p style="color:dodgerblue">Portale</p>
+        <footer class="d-inline">
+            <div id="wyswietlanie" style="display: none;color:white;">//AMG</div>
+            <button id="instagram" onclick="window.location.href='https://www.instagram.com/mercedesbenz/?hl=pl'" class="bg-dark border-0">
+                <a href="https://seeklogo.net/?p=89831" target="_blank"><img width="24px" height="24px" src="https://seeklogo.net/wp-content/uploads/2016/06/Instagram-logo-400x400.png" alt="Instagram new vector logo (color) download"/></a>
+            </button>
+        </footer>
+        <footer class="d-inline">
+            <button id="fb" onclick="window.location.href='https://pl-pl.facebook.com/MercedesBenz'" class="bg-dark border-0">
+                <a href="https://seeklogo.net/?p=100" target="_blank"><img width="24px" height="24px" src="https://seeklogo.net/wp-content/uploads/2014/07/fc-barcelona-logo.png" alt="Barcelona FC logo vector download"/></a>
+            </button>
+        </footer>
+        <footer class="d-inline">
+            <button id="twitter" onclick="window.location.href='https://pl-pl.facebook.com/MercedesBenz'" class="bg-dark border-0">
+                <a href="https://seeklogo.net/?p=238" target="_blank"><img width="24px" height="24px" src="https://seeklogo.net/wp-content/uploads/2011/05/mercedes-gp-petronas-f1-vector-400x400.jpg" alt="Mercedes GP Petronas F1 logo vector"/></a>
+            </button>
+        </footer>
+        <footer class="d-inline">
+            <button id="redblit" onclick="window.location.href='https://pl-pl.facebook.com/MercedesBenz'" class="bg-dark border-0">
+                <a href="https://seeklogo.net/?p=32950" target="_blank"><img width="24px" height="24px" src="https://seeklogo.net/wp-content/uploads/2015/11/twitter-logo.png" alt="Twitter logo vector"/></a>
+            </button>
+        </footer>
+    </blockquote>
+
+
+
+
+
+
+
+
+</footer>
+</div>
+
+</body>
+</html>
+

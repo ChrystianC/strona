@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Travel</title>
+    <!--Shorcut -->
+    <link rel="shortcut icon" href="https://img.icons8.com/color/12/000000/around-the-globe.png"/>
+    <!--Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--Polish words-->
+    <meta charset="UTF-8">
+    <!-- include style -->
+    <link rel="stylesheet" href="style/style_podroze.css">
+    <!--Responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Loop-->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="#">Japan</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+</head>
+<body>
+<!--Script-->
+<script src="js_p/podroze_script.js"></script>
+<!--Background-->
+<div class="background_img">
+    <!--Loop-->
+<div id="search" class="nav justify-content-end">
+    <button id='button1' class="nav-item hover_button" >
+        <img class="img-fluid "  src="https://img.icons8.com/ios/35/ffffff/search--v1.png" alt="" onclick="openNav()"/>
+    </button>
+</div>
+    <!--Center-->
+    <div id="center_logo">
+        <button class="hover_button">
+            <object data="style/hover_button.svg">
+
+            </object>
+        </button><br>Around globe
+    </div>
+    <!--UnderCenter-->
+    <div id="under_center" class="">
+        <ul class="nav justify-content-center">
+        <li id="li1"  class="nav-item"  style="border-top:2px solid whitesmoke;text-decoration: none;" >
+            <button class='buttonCenter' onmouseover= "liOn(this)" onmouseout="liOut(this)"><a  class="nav-link active text-white" aria-current="page" class="nav__link" href="subPage/Main_page">Main page</a></button>
+        </li>
+            <li class="nav-item" style="border-top:2px solid whitesmoke;text-decoration: none;">
+                <button class='buttonCenter'onmouseover= "liOn(this)" onmouseout="liOut(this)"><a  class="nav-link active text-white" aria-current="page" class="nav__link" href="subPage/Journeys" >Journeys</a></button>
+            </li>
+            <li class="nav-item" style="border-top:2px solid whitesmoke;text-decoration: none;">
+                <button class='buttonCenter' onmouseover= "liOn(this)" onmouseout="liOut(this)"> <a  class="nav-link active text-white" aria-current="page" class="nav__link" href="subPage/Documents" >Documents</a></button>
+            </li>
+            <li class="nav-item " style="border-top:2px solid whitesmoke;text-decoration: none;">
+                <button class='buttonCenter' onmouseover= "liOn(this)" onmouseout="liOut(this)"><a  class="nav-link active text-white" aria-current="page" class="nav__link" href="subPage/Guides" >Guides</a></button>
+            </li>
+            <li class="nav-item" style="border-top:2px solid whitesmoke;text-decoration: none;">
+                <button class='buttonCenter'  onmouseover= "liOn(this)" onmouseout="liOut(this)"><a  class="nav-link active text-white" aria-current="page"  class="nav__link" href="subPage/Shop" >Shop</a></button>
+            </li>
+        </ul>
+    </div>
+    <p type="module" src="js_p/index.js" class="text-center text-white">Hakone-Japan</p>
+</div>
+
+</body>
+</html>
