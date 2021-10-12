@@ -7,4 +7,4 @@ app.get("/*", (req, res) => {
     res.sendFile(path.resolve("frontend", "podroze.html"));
 });
 
-app.listen(process.env.PORT || 5060, () => console.log("Server running ...."));
+app.listen(process.env.PORT || 5060, () => console.log("Server running ...."));SSS
